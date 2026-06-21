@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="welcome">
+        <header class="cap">
+            <h1>Почему выбирают нас</h1>
+        </header>
+    </div>
+    <div class="main_container">
+        <div class="card1"><h2 class="h2">Свежие цветы</h2>
+            <p class="text">Доставляем цветы прямо <br>с плантации, не дольше<br>24 часов срезки</p>
+        </div>
+        <div class="card2"><h2>Быстрая доставка</h2>
+        <p>По Москве за 2 часа, в область <br>- до 4 часов </p>
+        </div>
+        <div class="card3">
+            <h2>Открытки и подарк</h2>
+            <p>Бесплатная открытка с вашими пожелание, сладости и мягкие игрушки</p>
+        </div>
+    </div>
+
+</body>
+</html>
+body {
+    display: grid;
+    justify-items: center;
+    background-color: rgb(253, 253, 253);
+}
+
+.welcome {
+    background-color: rgb(171, 253, 160);
+    border-radius: 5px;
+    border: 1px dotted;
+    border-color: rgb(1, 133, 133);
+    width: 450px;
+    text-align: center;
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.4)
+}
+
+.main_container {
+    display: flex;
+    gap: 30px;
+    justify-items: center;
+    margin: 100px;
+}
+
+.card1 {
+   background-color: #f8e0e8;
+   border-radius: 10px;
+   text-align: center;
+   width: 250px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+   transition: transform 0.1s ease,box-shadow 0.3s ease;;
+}
+
+.card2{
+   background-color: #a3dde7;
+   border-radius: 10px;
+   text-align: center;
+   width: 250px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+   transition: transform 0.1s ease,box-shadow 0.3s ease;;
+}
+
+.card3 {
+   background-color: #8cf8b9;
+   border-radius: 10px;
+   text-align: center;
+   width: 250px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+   transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card3:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .main_container{
+       flex-direction: column;
+        
+    }
+
+    .card1, .card2 ,.card3 {
+        width: 100%;  
+        max-width: 100%;
+    }
+}
