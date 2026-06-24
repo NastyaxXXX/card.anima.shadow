@@ -16,7 +16,7 @@ body {
 
 .main_container {
     display: flex;
-    gap: 30px;
+    gap: 45px;
     justify-items: center;
     margin: 100px;
 }
